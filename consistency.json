@@ -11,5 +11,17 @@
       "owner": "snowcoders",
       "platform": "github"
     }
-  ]
+  ],
+  "consumer": {
+    "exemptions": [
+      {
+        "glob": ".lintstagedrc.js",
+        "reason": "Custom override to use the local sortier cli vs the npm installed one"
+      },
+      {
+        "glob": ".sortierignore",
+        "reason": "Need to add test_assets to the ignore path"
+      }
+    ]
+  }
 }
