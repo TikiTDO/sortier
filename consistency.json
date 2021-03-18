@@ -11,5 +11,13 @@
       "owner": "snowcoders",
       "platform": "github"
     }
-  ]
+  ],
+  "consumer": {
+    "exemptions": [
+      {
+        "glob": ".lintstagedrc.js",
+        "reason": "Project has a custom override so it runs the local sortier instead of the npm package"
+      }
+    ]
+  }
 }
